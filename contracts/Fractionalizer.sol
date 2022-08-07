@@ -13,6 +13,8 @@ contract Fractionalizer is ERC1155, ERC1155Burnable, Ownable, ERC721Holder {
 
     Counters.Counter private _tokenIdCounter;
 
+    constructor() ERC1155("Fractionalizer") {}
+
     uint256 public constant decimals = 18;
     uint256 public constant totalSupply = 100000 * (10 ** decimals);
 
@@ -28,8 +30,6 @@ contract Fractionalizer is ERC1155, ERC1155Burnable, Ownable, ERC721Holder {
 
     event Fractionalised(uint256 indexed tokenId, address indexed nftCollection, uint256 indexed nftTokenId, address minter);
     event Redeemed(uint256 indexed tokenId, address indexed nftCollection, uint256 indexed nftTokenId, address redeemer);
-
-    constructor() ERC1155("Fractionalizer")
 
     function fractionalize(address collection, uint256 nftTokenId, string memory name, string memory symbol) external {
         IERC721 ERC721 = IERC721(collection);

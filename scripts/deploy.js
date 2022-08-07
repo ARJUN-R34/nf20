@@ -1,29 +1,22 @@
-// We require the Hardhat Runtime Environment explicitly here. This is optional
-// but useful for running the script in a standalone fashion through `node <script>`.
-//
-// You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
-// will compile your contracts, add the Hardhat Runtime Environment's members to the
-// global scope, and execute the script.
 const hre = require("hardhat");
 
 async function main() {
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const ONE_YEAR_IN_SECS = 365 * 24 * 60 * 60;
-  const unlockTime = currentTimestampInSeconds + ONE_YEAR_IN_SECS;
+  const [deployer] = await hre.ethers.getSigners();
+  const Token = await ethers.getContractFactory("CultNFT");
+  const token = await Token.deploy();
+  console.log("Deployed NFT with address:", token.address);
 
-  const lockedAmount = hre.ethers.utils.parseEther("1");
-
-  const Lock = await hre.ethers.getContractFactory("Lock");
-  const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
-
-  await lock.deployed();
-
-  console.log("Lock with 1 ETH deployed to:", lock.address);
+  const Fractionalizer = await ethers.getContractFactory("Fractionalizer");
+  const fractionalizer = await Fractionalizer.deploy();
+  console.log("Deployed Fractionalizer with address:", fractionalizer.address);
 }
 
-// We recommend this pattern to be able to use async/await everywhere
-// and properly handle errors.
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+main()
+  .then(() => process.exit(0))
+  .catch((err) => {
+    console.log(err);
+    process.exit(1);
+  });
+
+// Deployed NFT with address: 0x5edCa6f4Fb19cBEaEd19DD263d24C10bab6aAcC7
+// FractionalizerDeployed Fractionalizer with address: 0xA1eFBff756330cC18bDA927A01Cd00E75a385423

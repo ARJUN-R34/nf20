@@ -1,0 +1,38 @@
+{
+  "name": "nf20",
+  "version": "1.0.0",
+  "description": "Keep calm and fractionalize your NFTs",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "hardhat": "^2.10.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ARJUN-R34/nf20.git"
+  },
+  "keywords": [
+    "ethonline",
+    "metabolism",
+    "hacakthon",
+    "web3"
+  ],
+  "contributors": [
+    {
+      "name": "Arjun Sasikumar",
+      "email": "itsarjn@gmail.com"
+    },
+    {
+      "name": "Sumeet Rohra",
+      "email": "rohrasumeet@gmail.com"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ARJUN-R34/nf20/issues"
+  },
+  "homepage": "https://github.com/ARJUN-R34/nf20#readme"
+}

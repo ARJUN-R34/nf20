@@ -14,10 +14,10 @@ There is also a space for derivative instruments like ETFs, Options and futures 
 
 ## Deployed Contracts
 
-| Networks          | Contract                             | Address                                                                                                                                  |
-| ----------------- | -------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------- |
-| Ethereum Rinkeby  | CultNFT                              | [0x5edCa6f4Fb19cBEaEd19DD263d24C10bab6aAcC7](https://rinkeby.etherscan.io/address/0x5edCa6f4Fb19cBEaEd19DD263d24C10bab6aAcC7)            |
-|                   | Fractionalizer                       | [0xA1eFBff756330cC18bDA927A01Cd00E75a385423](https://rinkeby.etherscan.io/address/0xA1eFBff756330cC18bDA927A01Cd00E75a385423)            |
+| Networks         | Contract       | Address                                                                                                                       |
+| ---------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Ethereum Rinkeby | CultNFT        | [0xFF2C1cf1f92AA823A9bBfA9CDd15E2529ea51fFf](https://rinkeby.etherscan.io/address/0xFF2C1cf1f92AA823A9bBfA9CDd15E2529ea51fFf) |
+| Ethereum Rinkeby | Fractionalizer | [0x800449D010C28e9B58969042Cc7588760b524A14](https://rinkeby.etherscan.io/address/0x800449D010C28e9B58969042Cc7588760b524A14) |
 
 ## **WIP** 💪
 

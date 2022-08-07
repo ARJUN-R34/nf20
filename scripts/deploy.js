@@ -18,5 +18,5 @@ main()
     process.exit(1);
   });
 
-// Deployed NFT with address: 0x5edCa6f4Fb19cBEaEd19DD263d24C10bab6aAcC7
-// FractionalizerDeployed Fractionalizer with address: 0xA1eFBff756330cC18bDA927A01Cd00E75a385423
+// Deployed NFT with address: 0xFF2C1cf1f92AA823A9bBfA9CDd15E2529ea51fFf
+// FractionalizerDeployed Fractionalizer with address: 0x800449D010C28e9B58969042Cc7588760b524A14

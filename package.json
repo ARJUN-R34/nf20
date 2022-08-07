@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Keep calm and fractionalize your NFTs",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.2"
+  },
   "devDependencies": {
     "hardhat": "^2.10.1"
   },
